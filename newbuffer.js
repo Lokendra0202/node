@@ -1,2 +1,6 @@
-const myBuffer = Buffer.alloc(10); 
-const myBuffer = Buffer.from('Hello World');
+buf = Buffer.alloc(26);
+
+len = buf.write("simple easy learning");
+console.log("Octets written : " + len);
+
+console.log(len.toString('hex'));

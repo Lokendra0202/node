@@ -21,3 +21,13 @@ fs.open("sample.txt", "r", (err, fd) => {
     });
   });
 });
+
+var data = "My new data";
+
+wd = Buffer.from(data, 'utf8');
+fs.writeFile("sample.txt", wd, (err) => {
+  if (err) {
+    throw err;
+  }
+  console.log("Buffer data written to file successfully.");
+});
